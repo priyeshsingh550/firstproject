@@ -10,8 +10,9 @@ pipeline {
           
         stage('compile and run') {
             steps {
-                sh 'javac helloworld.java
-                      java Simple'
+                sh '''javac helloworld.java
+                      java Simple
+                    '''  
                     
             }
         }
