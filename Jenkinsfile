@@ -2,9 +2,11 @@
 pipeline {
     agent
     stages {
-        stage('clone')
+        stage('clone') {
           steps{
-                   git 'git@github.com:priyeshsingh550/firstproject.git 
+                   git 'https://github.com/priyeshsingh550/firstproject.git'
+          }
+    }
           
         stage('compile and run') {
             steps {
@@ -14,4 +16,3 @@ pipeline {
             }
         }
     }
-}
